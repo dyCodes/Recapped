@@ -1,0 +1,77 @@
+/* Base
+   ========================================================================== */
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Helper Classes */
+._flex {
+	display: flex;
+	align-items: center;
+}
+._flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+._flex_space_btw {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+._grid {
+	display: grid;
+	align-content: center;
+}
+.center_content {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+// Utility Classes
+._p1 {
+	padding: 1rem !important;
+}
+._p2 {
+	padding: 2rem !important;
+}
+._py1 {
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+}
+._py2 {
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+._pt0 {
+	padding-top: 0 !important;
+}
+._pb0 {
+	padding-bottom: 0 !important;
+}
+._p0 {
+	padding: 0 !important;
+}
+._m0 {
+	margin: 0 !important;
+}
+._mt0 {
+	margin-top: 0 !important;
+}
+._mb0 {
+	margin-bottom: 0 !important;
+}
+._mb1 {
+	margin-bottom: 1rem !important;
+}
+._mb2 {
+	margin-bottom: 2rem !important;
+}

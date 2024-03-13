@@ -1,0 +1,71 @@
+// COLORS
+$primary: #111;
+$secondary: #2f2f2f;
+// $black: #272027;
+// $primaryHover: rgba(42, 41, 44, 0.75);
+// $secondaryHover: rgba(30, 31, 32, 0.75);
+
+// MIXINS
+@mixin grid_place_center {
+	display: grid;
+	place-content: center;
+}
+
+@mixin flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex_space_between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// MEDIA QUERIES
+@mixin media_screen_sm {
+	@media (max-width: 576px) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin media_screen_lg_max {
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+@mixin media_screen_lg {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin media_screen_xl {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+
+// MEDIA QUERIES FUNCTIONS
+@mixin hideOnTablet {
+	@media (min-width: 768px) {
+		display: none !important;
+	}
+}
+@mixin hideOnMobile {
+	@media (max-width: 767px) {
+		display: none !important;
+	}
+}

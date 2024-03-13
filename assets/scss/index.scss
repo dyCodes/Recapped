@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+// IMPORTS
+@import "./config";
+@import "./base";
+@import "./layout";
+
+/*!----- COMPONENTS -------*/
+.app .card_button {
+	width: 100%;
+	text-align: left;
+	justify-content: space-between;
+	padding: 16px 16px;
+	font-weight: bold;
+	border: 2px solid #111 !important;
+	// border-radius: 10px;
+
+	.button_subtext {
+		display: block;
+		color: gray;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: initial;
+	}
+}
+.searchForm #searchInput {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*!----- PAGES -------*/
+#Home {
+	.header_card {
+		padding: 24px 16px;
+		background: #8976ff;
+		border: 2px solid #000000;
+		border-radius: 8px;
+
+		.intro_heading {
+			color: #fff;
+			font-weight: 400;
+			font-size: 26px;
+			line-height: 39px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.profile_header {
+		margin-bottom: 30px;
+		@include flex_space_between;
+
+		img {
+			margin-right: 12px;
+		}
+	}
+}
+
+#MarketPlace {
+	.listItem {
+		@include flex_space_between;
+
+		._name {
+			font-size: 18px;
+			font-weight: 500;
+			margin: 0;
+			margin-bottom: 3px;
+		}
+		span {
+			display: block;
+			font-size: 14px;
+			color: gray;
+		}
+	}
+}
+
+#History {
+	.listItem {
+		@include flex_space_between;
+
+		._name {
+			font-size: 18px;
+			font-weight: 500;
+			margin: 0;
+			margin-bottom: 3px;
+		}
+		._date {
+			color: gray;
+			font-size: 15px;
+			margin: 0;
+			font-weight: 500;
+			margin-bottom: 3px;
+		}
+		span {
+			display: block;
+			font-size: 14px;
+			color: gray;
+		}
+	}
+}
+
+#SignUp {
+	padding: 6px;
+	margin: 35px 0;
+
+	#logo {
+		display: block;
+		color: #111;
+		text-decoration: none;
+		margin-bottom: 36px;
+	}
+
+	.signup_input {
+		margin-bottom: 18px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+/*!----- MEDIA QUERIES -------*/
+@include media_screen_lg {
+}
