@@ -18,8 +18,6 @@ const Layout = ({ font, children }) => {
 		}
 	};
 
-	console.log([router.pathname, getCurrentPage()]);
-
 	return (
 		<div id={getCurrentPage()} className={'app ' + font}>
 			<main>{children}</main>

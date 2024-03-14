@@ -10,8 +10,8 @@ const ProfileSection = () => {
 		<div className='profile_section'>
 			<div className='profile_header'>
 				<div className='_flex'>
-					<img src={profilePhoto.src} alt='Current User' width='70px' />
-					<h3 style={{ marginRight: '4px' }}>{userData?.name ?? 'Default User'}</h3>
+					<img src={profilePhoto.src} alt='Current User' width='65px' />
+					<h3 style={{ marginRight: '4px', fontSize: '17px' }}>{userData?.name ?? 'Default User'}</h3>
 				</div>
 
 				<Button variant='outlined' size='medium' endIcon={<ArrowForward />}>

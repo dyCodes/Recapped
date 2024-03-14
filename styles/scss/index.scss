@@ -41,14 +41,14 @@
 			margin-bottom: 20px;
 		}
 	}
+}
 
-	.profile_header {
-		margin-bottom: 30px;
-		@include flex_space_between;
+.profile_header {
+	margin-bottom: 30px;
+	@include flex_space_between;
 
-		img {
-			margin-right: 12px;
-		}
+	img {
+		margin-right: 12px;
 	}
 }
 
