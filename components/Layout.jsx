@@ -24,25 +24,27 @@ const Layout = ({ font, children }) => {
 		<div id={getCurrentPage()} className={'app ' + font}>
 			<main>{children}</main>
 
-			<div className='footer_navbar'>
-				<Container maxWidth='sm' className='container'>
-					<MuiLink href='/' component={Link} underline='none'>
-						<HomeOutlinedIcon className='navIcon' />
-					</MuiLink>
+			{router.pathname !== '/signup' && (
+				<div className='footer_navbar'>
+					<Container maxWidth='sm' className='container'>
+						<MuiLink href='/' component={Link} underline='none'>
+							<HomeOutlinedIcon className='navIcon' />
+						</MuiLink>
 
-					<MuiLink href='/marketplace' component={Link} underline='none'>
-						<StorefrontOutlinedIcon className='navIcon' />
-					</MuiLink>
+						<MuiLink href='/marketplace' component={Link} underline='none'>
+							<StorefrontOutlinedIcon className='navIcon' />
+						</MuiLink>
 
-					<MuiLink href='/transactions' component={Link} underline='none'>
-						<HistoryOutlinedIcon className='navIcon' />
-					</MuiLink>
+						<MuiLink href='/transactions' component={Link} underline='none'>
+							<HistoryOutlinedIcon className='navIcon' />
+						</MuiLink>
 
-					<MuiLink href='/settings' component={Link} underline='none'>
-						<SettingsOutlinedIcon className='navIcon' />
-					</MuiLink>
-				</Container>
-			</div>
+						<MuiLink href='/settings' component={Link} underline='none'>
+							<SettingsOutlinedIcon className='navIcon' />
+						</MuiLink>
+					</Container>
+				</div>
+			)}
 		</div>
 	);
 };
